@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Sign-up form</title>
+        
+    </head>
+
+    <body>
+        <main>
+            <div class="banner-side">
+                <div class="logoBanner">
+                    <div class="logo">
+                        <img src="./images/circle-glitch.png" alt="">
+                    </div>
+                    <div class="logoName">
+                        <h1>juneDev</h1>
+                    </div>
+                </div>
+                <footer>
+                    <p style="color: white">Photo by <a style="color:white" href="https://unsplash.com/@harix">harix</a> on Unsplash</p>
+                </footer>
+            </div>
+            <div class="form-side">
+                <div class="headBanner">
+                    <p>This is not a real online service! You know you need something like this in your life
+                        to help you realize your deepest dreams. Sign up <me>now</me> to get started.
+                    </p>
+                    <p>You <me>know</me> you want to.</p>
+                </div>
+                <form action="#">
+                    <div class="form-box">
+                        <div class="formRow">
+                            <div class="fName-div col1">
+                                <label for="fName">FIRST NAME</label>
+                                <input type="text" id="fName" name="fName" required>
+                            </div>
+                            <div class="lName-div">
+                                <label for="lName">LAST NAME</label>
+                                <input type="text" id="lName" name="lName" required>
+                            </div>
+                        </div>
+                        <div class="formRow">
+                            <div class="userEmail col1">
+                                <label for="email">EMAIL</label>
+                                <input type="email">
+                            </div>
+                            <div class="userTel">
+                                <label for="tel">PHONE NUMBER</label>
+                                <input type="tel">
+                            </div>
+                        </div>
+                        <div class="formRow">
+                            <div class="pw1 col1">
+                                <label for="pw">PASSWORD</label>
+                                <input type="password">
+                            </div>
+                            <div class="pwConfirm">
+                                <label for="pw-confirm">CONFIRM PASSWORD</label>
+                                <input type="password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Create Account</button>
+                    </div>
+                </form>
+                <div class="existingAccount">
+                    <p>Already have an account? <a>Log in</a></p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
