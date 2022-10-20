@@ -95,12 +95,25 @@ form{
     font-size: 10px;
 }
 
+
+
+/* ---- ----- Form Inputs ----- ---- */
+
 .inputBlock input {
-    border: 1px solid #76767698;
+    border: 1px solid #6d6d6d98;
     background-color: rgb(1,1,1);
     border-radius: 3px;
+    color: #9f9f9fd2;
 }
 
+.inputBlock input:focus{
+    outline: none !important;
+    border: 2px solid #ff2ec7;
+    box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.91);
+}
+
+
+/* ----- ----- ----- ----- ----- ---- */
 .buttonBlock {
     padding: 30px 20px;
 }
@@ -137,3 +150,4 @@ form{
     color: #c1c1c1;
     cursor: pointer;
 }
+
