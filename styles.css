@@ -11,7 +11,7 @@ main{
 }
 
 .banner-side {
-    width: min(600px, 60vw);
+    width: min(600px, 50vw);
     height: 100vh;
     background:  no-repeat url(https://images.unsplash.com/photo-1602136773736-34d445b989cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80);
     background-position: center;
@@ -40,7 +40,7 @@ main{
 }
 
 .logoName h1 {
-    font-size: 46px;
+    font-size: 40px;
 }
 
 
@@ -49,6 +49,8 @@ main{
 }
 
 .form-side {
+    background-color: #000;
+    color: #c1c1c1;
     display: flex;
     flex-direction: column;
 }
@@ -60,19 +62,63 @@ main{
     font-size: 20px;
 }
 
+form{
+    background-color: #000;
+}
+/* ---- Makes padding and rows for input fields.----- */
 .form-box {
-    border: 2px solid grey;
-    padding: 20px 50px;
+    color: #a1a1a1;
+    background-color: rgb(1, 1, 1);
+    box-shadow: 0 2px 18px #181818;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
 }
 
+/* makes each row have two columns */
 .formRow {
     display: flex;
+    padding-right: 5vw;
 }
 
-.formRow div {
+/* each block grows with screen */
+.inputBlock {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    margin-right: 30px
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.inputBlock label {
+    font-size: 10px;
+}
+
+.inputBlock input {
+    border: 1px solid #76767698;
+    background-color: rgb(1,1,1);
+    border-radius: 3px;
+}
+
+.buttonBlock {
+    padding: 30px 20px;
+}
+
+.buttonBlock button {
+    padding: 5px 15px;
+    color: #ff2ec7;
+    border: 3px solid #ff2ec7;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #000;
+}
+
+.buttonBlock button:hover {
+    background-color: #ff2ec7;
+    color: #000;
+    cursor: pointer;
+}
+
+.buttonBlock button:active {
+    background-color: #f800b6;
 }
