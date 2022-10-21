@@ -101,17 +101,31 @@ form{
 
 .inputBlock input {
     border: 1px solid #6d6d6d98;
-    background-color: rgb(1,1,1);
+    background-color: transparent;
     border-radius: 3px;
     color: #9f9f9fd2;
+    margin: 4px -2px;
 }
 
-.inputBlock input:focus{
+/* #00c3ff; */
+
+.inputBlock input:focus {
+    outline: none !important; rgba(255, 255, 255, 0.91);
+    border: 2px solid rgba(157, 217, 255, 0.91);
+    box-shadow: 0px 0px 4px 2px #0099fffa;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
     outline: none !important;
-    border: 2px solid #ff2ec7;
+    border: 2px solid #fc4848c8;
     box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.91);
 }
 
+.inputBlock span{
+    color: red;
+    font-size: 10px;
+    padding: 5px 3px;
+}
 
 /* ----- ----- ----- ----- ----- ---- */
 .buttonBlock {

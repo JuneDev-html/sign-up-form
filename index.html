@@ -28,7 +28,7 @@
             <div class="form-side">
                 <div class="headBanner">
                     <p>This is not a real online service! You know you need something like this in your life
-                        to help you realize your deepest dreams. 
+                        to help you realize your deepest dreams.
                     </p>
                     <p>Sign up <em>now</em> to get started.</p>
                     <p>You <em>know</em> you want to.</p>
@@ -37,38 +37,40 @@
                     <div class="form-box">
                         <h2>Lets do this!</h2>
                         <div class="formRow">
-                            <div class="fName-div inputBlock">
+                            <div class="fNameBlock inputBlock">
                                 <label for="fName">FIRST NAME</label>
-                                <input type="text" id="fName" name="fName" required>
+                                <input type="text" id="fName" name="fName" placeholder=" " >
                             </div>
-                            <div class="lName-div inputBlock">
+                            <div class="lNameBlock inputBlock">
                                 <label for="lName">LAST NAME</label>
-                                <input type="text" id="lName" name="lName" required>
+                                <input type="text" id="lName" name="lName" placeholder=" " >
                             </div>
                         </div>
                         <div class="formRow">
                             <div class="userEmail inputBlock">
                                 <label for="email">EMAIL</label>
-                                <input type="email">
+                                <input type="email" id="email" name="email" placeholder="email@email.com" >
                             </div>
                             <div class="userTel inputBlock">
                                 <label for="tel">PHONE NUMBER</label>
-                                <input type="tel">
+                                <input type="tel" id="tel" name="tel" placeholder="(xxx)xxx-xxxx">
                             </div>
                         </div>
                         <div class="formRow">
                             <div class="pw1 inputBlock">
                                 <label for="pw">PASSWORD</label>
-                                <input type="password">
+                                <input type="password" id="pw" class="pwOne" name="password" placeholder=" " required>
+                                <span class="error" aria-live="polite"></span>
                             </div>
-                            <div class="pwConfirm inputBlock">
+                            <div class="pwConfirmBlock inputBlock">
                                 <label for="pw-confirm">CONFIRM PASSWORD</label>
-                                <input type="password">
+                                <input type="password" id="pw-confirm" placeholder=" " class="pwConfirmation" required>
+                                <span class="error" aria-live="polite"></span>
                             </div>
                         </div>
                     </div>
                     <div class="buttonBlock">
-                        <button type="submit">Create Account</button>
+                        <button id="submitButton" type="submit">Create Account</button>
                     </div>
                 </form>
                 <div class="existingAccount">
