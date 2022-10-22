@@ -54,6 +54,7 @@ main{
     color: #c1c1c1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .headBanner {
@@ -101,6 +102,7 @@ form{
 /* ---- ----- Form Inputs ----- ---- */
 
 .inputBlock input {
+    transition: 0.2s;
     border: 1px solid #6d6d6d98;
     background-color: transparent;
     border-radius: 3px;
@@ -111,6 +113,7 @@ form{
 /* blue- #00c3ff; */
 
 .inputBlock input:focus {
+    transition: 0.1s;
     outline: none !important; rgba(255, 255, 255, 0.91);
     border: 2px solid rgba(183, 227, 255, 0.91);
     box-shadow: 0px 0px 4px 1px #0099fffa;
@@ -118,6 +121,7 @@ form{
 
 /* red- #fc4848c8; */
 input:not(:focus):not(:placeholder-shown):invalid {
+    transition: 0.15s;
     outline: none !important;
     border: 2px solid rgba(255, 180, 180, 0.873);
     box-shadow: 0px 0px 5px 1px  #ff3939fb;
@@ -131,7 +135,7 @@ input:not(:focus):not(:placeholder-shown):invalid {
 
 /* ----- ----- ----- ----- ----- ---- */
 .buttonBlock {
-    padding: 30px 20px;
+    padding: 0px 20px;
 }
 
 .buttonBlock button {
@@ -144,6 +148,7 @@ input:not(:focus):not(:placeholder-shown):invalid {
 }
 
 .buttonBlock button:hover {
+    transition: 0.15s;
     background-color: #ff2ec7;
     color: #000;
     cursor: pointer;
@@ -163,9 +168,41 @@ input:not(:focus):not(:placeholder-shown):invalid {
 }
 
 .existingAccount a:hover{
+    transition: 0.25s;
     color: #c1c1c1;
     cursor: pointer;
 }
+
+.formFooter {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    letter-spacing: 2px;
+}
+
+.formFooter p{
+    position: relative;
+}
+
+.formFooter a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.formFooter a:hover {
+    transition: 0.25s;
+    cursor: pointer;
+    color:#ff00ee;
+}
+
+.formFooter img {
+    position: absolute;
+    right: -25px;
+    bottom: 1px;
+}
+
 
 @media only screen and (max-width: 600px) {
     main {
@@ -182,6 +219,7 @@ input:not(:focus):not(:placeholder-shown):invalid {
     }
 
     .buttonBlock {
+        padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
