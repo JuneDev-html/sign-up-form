@@ -49,6 +49,7 @@ main{
 }
 
 .form-side {
+    width: 100%;
     background-color: #000;
     color: #c1c1c1;
     display: flex;
@@ -111,15 +112,15 @@ form{
 
 .inputBlock input:focus {
     outline: none !important; rgba(255, 255, 255, 0.91);
-    border: 2px solid rgba(157, 217, 255, 0.91);
-    box-shadow: 0px 0px 4px 2px #0099fffa;
+    border: 2px solid rgba(183, 227, 255, 0.91);
+    box-shadow: 0px 0px 4px 1px #0099fffa;
 }
 
 /* red- #fc4848c8; */
 input:not(:focus):not(:placeholder-shown):invalid {
     outline: none !important;
-    border: 2px solid rgba(254, 189, 189, 0.873);
-    box-shadow: 0px 0px 4px 2px  #ff3939fb;
+    border: 2px solid rgba(255, 180, 180, 0.873);
+    box-shadow: 0px 0px 5px 1px  #ff3939fb;
 }
 
 .inputBlock span{
@@ -166,3 +167,29 @@ input:not(:focus):not(:placeholder-shown):invalid {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .banner-side {
+        width: 100%;
+        height: min(110px, 30vh);
+    }
+
+    .logoBanner {
+        margin: 0;
+    }
+
+    .buttonBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .existingAccount {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+    }
+}
