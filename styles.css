@@ -198,6 +198,8 @@ input:not(:focus):not(:placeholder-shown):invalid {
 }
 
 .formFooter img {
+    content: url("images/gh-logo.png");
+    width: 20px;
     position: absolute;
     right: -25px;
     bottom: 1px;
